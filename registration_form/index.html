@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Registration Form | By luckfun</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="mainform" onsubmit="return check(this)" method="post">
+            <label for="name">Name</label>
+            <div class="reg_input">
+                <input type="text" name="name" placeholder="Name" id="name">
+            </div>
+            <label for="email">Email</label>
+            <div class="reg_input">
+                <input type="email" name="email" placeholder="Email" id="email">
+            </div>
+            <label for="password">Password</label>
+            <div class="reg_input">
+                <input type="password" name="password" placeholder="Password" id="password">
+            </div>
+            <div id="error" style="color: red"></div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
